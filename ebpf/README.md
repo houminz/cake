@@ -1,3 +1,3 @@
 # eBPF
 
-see more [here](https://houmin.cc/tags/eBPF)
+see more [here](https://houmin.cc/tags/BPF)
