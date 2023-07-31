@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: mpi-env
+  labels:
+    app: mpi-env
+spec:
+  selector:
+    matchLabels:
+      app: mpi-env
+  template:
+    metadata:
+      labels:
+        app: mpi-env
+    spec:
+      containers:
+      - name: mpi-env
+        image: unicosmos/mpi:v0.0.1
+        command: ['/bin/sh', '-c', 'sleep 1d']
+
